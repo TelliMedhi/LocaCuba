@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connection{% endblock %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h1>Connexion</h1>
+        <p>Connecter vous pour avoir acces aux locations et laisser des commentaires </p>
+
+    </div>
+
+    <div class="row ">
+          <div class="col-md-12 offset-md-3">
+             <form action="{{ path('user_connexion')}}" method="post">
+                <div class="form-group col-6 ">
+                    <input placeholder="Adress email..." required name="_username" type="text" class="form-control">
+                </div>
+                <div class="form-group col-6">
+                    <input placeholder="mot de passe..." required name="_password" type="password" class="form-control">
+                </div>
+                 <div class="form-group col-6">
+                     <button type="submit" class="btn btn-success">Connexion</button>
+                 </div>
+             </form>
+
+        </div>
+    </div>
+
+{% endblock %}
