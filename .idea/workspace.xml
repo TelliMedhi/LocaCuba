@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7f9ba0e-93f0-4897-a75f-0fcb08acc18c" name="Default Changelist" comment="" />
+    <list default="true" id="a7f9ba0e-93f0-4897-a75f-0fcb08acc18c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -139,6 +146,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1SByXaWA5faNyxZnSW75kXi7Jya" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -148,6 +156,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -162,6 +171,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.AdminPropertyController.php">
+    <configuration name="AdminPropertyController.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LocaCuba42/Controller/AdminPropertyController.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="edit.html.twig" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LocaCuba42/templates/admin_property/edit.html.twig" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.AdminPropertyController.php" />
+        <item itemvalue="JavaScript Debug.edit.html.twig" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -174,11 +197,36 @@
       <updated>1571051324636</updated>
       <workItem from="1571051333949" duration="193000" />
       <workItem from="1571051599989" duration="30581000" />
-      <workItem from="1571154919988" duration="10865000" />
+      <workItem from="1571154919988" duration="11464000" />
+      <workItem from="1571251511658" duration="50518000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/admin_property/edit.html.twig</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

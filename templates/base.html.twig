@@ -21,13 +21,13 @@
                     <a class="nav-link"{% if current_menu is defined and current_menu == 'properties'%}{% endif %} href="{{ path('property.index') }}">Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="{{ path('user_connexion') }}">Louer</a>
+                    <a class="nav-link " href="">Louer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('user_registration') }}">Connection</a>
+                    <a class="nav-link" href="{{ path('user_connexion') }}">Connection</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Inscription</a>
+                    <a class="nav-link" href="{{ path('user_registration') }}">Inscription</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

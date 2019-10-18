@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Céer une nouvelle location' %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="container py-4 col-9 alert-success rounded-lg">
+        <div class="col-12 ">
+            <h1>Créer une nouvelle location</h1>
+            {{include ('admin_property/form.html.twig', {form: form, button: 'Créer'}) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

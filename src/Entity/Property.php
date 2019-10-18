@@ -2,15 +2,19 @@
 
 namespace App\Entity;
 use Cocur\Slugify\Slugify;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PropertyRepository")
+ * @UniqueEntity("title",
+ * message="Ce titre existe déja !!")
  */
 class Property
 {
     const HEAT = [
-        0 => 'Electrique',
+        0 => 'Électrique',
         1 => 'Gaz'
     ];
     /**
@@ -22,21 +26,41 @@ class Property
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(
+     * min = 7,
+     * minMessage = "Votre titre est trop court.Un minimum de 7 caractairs est requis"
+     * )
      */
     private $title;
 
     /**
      * @ORM\Column(type="text", nullable=true)
+     * @Assert\Length(
+     * min = 20,
+     * minMessage = "Le contenu votre article est trop court.Un minimum de 20 caractairs est requis",
+     * )
      */
     private $description;
 
     /**
      * @ORM\Column(type="integer")
+    @Assert\Range(
+     *      min = 10,
+     *      max = 500,
+     *      minMessage = "Dimantion supérieure ou égale à 10 m²",
+     *      maxMessage = "La dimantion ne peut pas être supérieure à 500 m²"
+     * )
      */
     private $surface;
 
     /**
      * @ORM\Column(type="integer")
+    @Assert\Range(
+     *      min = 2,
+     *      max = 15,
+     *      minMessage = "Location supérireur ou égale à 2 pièces ",
+     *      maxMessage = "Location ne peut être supérieure à 15 pièces"
+     * )
      */
     private $rooms;
 
@@ -71,6 +95,7 @@ class Property
     private $address;
 
     /**
+     * @Assert\Regex("/^[0-9]{5}$/")
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $postale_code;
